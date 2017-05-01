@@ -1,17 +1,143 @@
-\documentclass{alok_resume}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+
+%\usepackage[scaled]{helvet}
+%\renewcommand\familydefault{\sfdefault}
+%\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+\name{Alok Hota} % Your name
+%\address{123 Broadway \\ City, State 12345} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(615)~$\cdot$~419~$\cdot$~7781 \\ alok@utk.edu} % Your phone number and email
 
 \begin{document}
 
-\title{alok hota}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\maketitle
+\begin{rSection}{Education}
 
-\section{education}
-\subsection{University of Tennessee, Knoxville}
-\subsection{Vanderbilt University}
-\subsection{Fisk University}
+{{\bf PhD in Computer Science}, University of Tennessee, 3.92 GPA} \hfill {\em in progress} \\ 
+%\textbf{PhD in Computer Science}, 3.92 GPA \\
+Focus on Large Data Visualization--scalable software platforms to support interactive \\
+visualization of complex spatio-temporal datasets.
 
-\section{experience}
-\subsection{Graduate Research Assistant}
+{{\bf MS in Computer Science}, University of Tennessee} \hfill {\em 2014--2017}
+
+{{\bf BE in Computer Engineering}, Vanderbilt University} \hfill {\em 2011--2013}
+
+{{\bf BS in Computer Science}, University of Tennessee} \hfill {\em 2008--2011}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Sandia National Laboratories}{Summer 2016}{Graduate Student Intern}{Albuquerque, NM}
+    \item Development of a method for general-case vectorization in VTK-m for x86 CPUs
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Intel Parallel Computing Center at Joint Institute for Computational Science}{Fall 2014--present}{Graduate Research Assistant}{Knoxville, TN}
+    \item Integration and support of OSPRay ray tracing rendering engine into the VisIt \\ visualization application
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Advanced Computing Center for Research and Education}{June 2013--July 2014}{Professional Programmer}{Nashville, TN}
+\item Developed live depot activity monitor for storage depots
+\item Expanded in-house message queue system for parallel job distribution
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Institute for Software Integrated Systems}{February 2012--May 2013}{Undergraduate Student Researcher}{Nashville, TN}
+\item Worked under Dr. Gautam Biswas to develop a traffic simulation model
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{National Oceanic and Atmospheric Administration}{Summer 2011}{Undergraduate Student Intern}{Silver Spring, MD}
+\item Developed several NOAA EVL Images of the Day
+\item Processed and visualized lightning strikes during a tornado event
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Fisk University}{2009--2011}{Undergraduate Student Researcher}{Nashville, TN}
+    \item Worked under Dr. Lei Qian on NOAA-funded projects
+    \item Developed a hurricane detection algorithm using target location
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}r @{\hspace{3ex}} l }
+Fluent with & \textbf{Python}, C/C++, Java, Bash \\
+Knowledgeable with & VisIt, ParaView, VTK, VTK-m, CUDA
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Scholarships and Awards}
+
+University of Tennessee Athletic Department Graduate Student Award \hfill \textit{2014--present} \\
+Dean's List, Vanderbilt University \hfill \textit{2011, 2012} \\
+Summa cum Laude, Fisk University \hfill \textit{2011} \\
+Provost's List, Fisk University \hfill \textit{2008--2011}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+\textbf{Alok Hota}, Mohammad Raji, Tanner Hobson, Jian Huang, ``A Space-Efficient Method for Ensemble Analysis and Visualization'', Accepted to \textit{EGPGV}, 2017.
+
+Mohammad Raji, \textbf{Alok Hota}, Robert Sisneros, Jian Huang, ``Photo-Guided Exploration of Volume Data Features'', Accepted to \textit{EGPGV}, 2017.
+
+Mohammad Raji, \textbf{Alok Hota}, Jian Huang, ``Embeddable Volume Rendering'', Submitted to \textit{IEEE SciVis}, 2017.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
