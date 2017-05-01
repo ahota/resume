@@ -1,3 +1,6 @@
+# folder of PDFs sent to others
+sent/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
