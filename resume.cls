@@ -22,6 +22,16 @@
 
 \LoadClass[10pt,letterpaper]{article} % Font size and paper type
 
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=MidnightBlue,
+}
+\urlstyle{same}
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
