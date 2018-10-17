@@ -111,7 +111,7 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
+\newenvironment{rSubsection}[4]{
  {\bf #1} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
@@ -122,6 +122,14 @@
   }{
   \end{list}
 %  \vspace{0.5em} % Some space after the list of bullet points
+}
+
+\newenvironment{rSubsectionNoList}[4]{
+    {\bf #1} \hfill {#2} % Bold company name and date on the right
+    \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+        \\
+        {\em #3} \hfill {\em #4} % Italic job title and location
+    }
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
